@@ -1,0 +1,241 @@
+﻿@using Entity
+@model List<Galery>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="page-title page-title-4 bg-overlay bg-overlay-dark bg-parallax" id="page-title">
+    <div class="bg-section"><img src="~/assets/images/page-titles/10.jpg" alt="Background"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="title text-lg-left">
+                    <div class="title-sub-heading">
+                    </div>
+                    <div class="title-heading">
+                    </div>
+                    <div class="clearfix"><h1 style="color:#fff">Belgelerimiz</h1></div>
+                    <ol class="breadcrumb justify-content-lg-start">
+                        <li class="breadcrumb-item"><a href="/">Anasayfa</a></li>
+                        <li class="breadcrumb-item"><a href="">Belgelerimiz</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <header class="header header-1 header-transparent" id="navbar-spy">
+
+        <nav class="navbar navbar-expand-lg navbar-bordered navbar-sticky" id="primary-menu">
+            <div class="container">
+                <a class="navbar-brand" href="/"><img class="logo logo-light" src="~/assets/images/logo/logo-light.png" alt="Equita Logo"><img class="logo logo-dark" src="~/assets/images/logo/logo-dark.png" alt="Equita Logo"></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item has-dropdown">
+                            <a class="dropdown-toggle" href="/Home/Index" data-toggle="dropdown"><span>Anasayfa</span></a>
+
+                        </li>
+                        <li class="nav-item"><a href="/Product/Demo"><span>Ürünler</span></a></li>
+                        <li class="has-dropdown nav-item ">
+                            <a href="/Galery/Index" class=" nav__item-link">
+                                Belgelerimiz
+
+                            </a>
+
+                        </li>
+                        <li class="has-dropdown nav-item ">
+                            <a href="/About/Index" class=" nav__item-link">
+                                Kurumsal
+
+                            </a>
+
+                        </li>
+                        <li class="has-dropdown nav-item ">
+                            <a href="/OurService/Index" class=" nav__item-link">
+                                Katalog
+
+                            </a>
+
+                        </li>
+                        <li class="has-dropdown nav-item ">
+                            <a href="/Contact/Index" class=" nav__item-link">
+                                İletişim
+
+                            </a>
+
+                        </li>
+                        <li hidden="" style="display: none !important; ">
+
+
+                        </li>
+
+                    </ul>
+                    <div class="module-container">
+
+                        <div class="module module-search float-left">
+                            <div class="module-icon search-icon"><i class="icon-search"></i><span class="title">search</span></div>
+                            <div class="module-content module-fullscreen module-search-box">
+                                <div class="pos-vertical-center">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+                                                <form class="form-search">
+                                                    <input class="form-control" type="text" placeholder="type words then enter">
+                                                    <button></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><a class="module-cancel" href="javascript:void(0)"><i class="fas fa-times"></i></a>
+                            </div>
+                        </div>
+                        <div class="module-contact"><a class="btn btn--primary" href="/Contact/Index">İletişim</a></div>
+                        <div class="module module-language">
+                            <div class="selected"><span>en </span><i class="fas fa-chevron-down"></i></div>
+                            <div class="lang-list">
+                                <ul>
+                                    <li> <a href="javascript:void(0)">english</a></li>
+                                    <li> <a href="javascript:void(0)">arabic</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+    <section class="awards" id="awards">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 offset-lg-3">
+                    <div class="heading text-center">
+                        <p class="heading-subtitle">Safe &amp; Reliable Cargo Solutions!</p>
+                        <h2 class="heading-title">
+                            Managing Logistics For World’s Multinational Companies.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="award">
+                        <div class="award-img">
+                            <img src="~/assets/images/careers/1.png" alt="award img">
+                        </div>
+
+                        <div class="award-content">
+                            <h4 class="award-title">
+                                <a href="work-single-small-images.html">family business award</a>
+                            </h4>
+                            <p class="award-desc">
+                                We believe that partnerships are fundamental to our growth.
+                                We'll seek the highest quality global forwarding services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="award">
+                        <div class="award-img">
+                            <img src="~/assets/images/careers/2.png" alt="award img">
+                        </div>
+
+                        <div class="award-content">
+                            <h4 class="award-title">
+                                <a href="work-single-small-images.html">Excellence in Exporting</a>
+                            </h4>
+                            <p class="award-desc">
+                                When we communicate, we are honest and direct. We won't make
+                                excuses, simply offer you a concrete solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="award">
+                        <div class="award-img">
+                            <img src="~/assets/images/careers/3.png" alt="award img">
+                        </div>
+
+                        <div class="award-content">
+                            <h4 class="award-title">
+                                <a href="work-single-small-images.html">Top Leading Global Trade</a>
+                            </h4>
+                            <p class="award-desc">
+                                As a logistics solutions provider, we’ll monitor your
+                                logistical objectives and make sure all your logistical
+                                activities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="award">
+                        <div class="award-img">
+                            <img src="~/assets/images/careers/4.png" alt="award img">
+                        </div>
+
+                        <div class="award-content">
+                            <h4 class="award-title">
+                                <a href="work-single-small-images.html">
+                                    Sales Excellence Award
+                                </a>
+                            </h4>
+                            <p class="award-desc">
+                                We believe that partnerships are fundamental to our growth.
+                                We'll seek the highest quality global forwarding services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="award">
+                        <div class="award-img">
+                            <img src="~/assets/images/careers/5.png" alt="award img">
+                        </div>
+
+                        <div class="award-content">
+                            <h4 class="award-title">
+                                <a href="work-single-small-images.html">Construction Excellence</a>
+                            </h4>
+                            <p class="award-desc">
+                                When we communicate, we are honest and direct. We won't make
+                                excuses, simply offer you a concrete solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="award">
+                        <div class="award-img">
+                            <img src="~/assets/images/careers/6.png" alt="award img">
+                        </div>
+
+                        <div class="award-content">
+                            <h4 class="award-title">
+                                <a href="work-single-small-images.html">safety award</a>
+                            </h4>
+                            <p class="award-desc">
+                                As a logistics solutions provider, we’ll monitor your
+                                logistical objectives and make sure all your logistical
+                                activities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+

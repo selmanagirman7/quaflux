@@ -1,0 +1,670 @@
+﻿@using Entity
+@model List<Product>
+
+@{
+    ViewData["Title"] = "ProductDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<section class="page-title page-title-4 bg-overlay bg-overlay-dark bg-parallax" id="page-title">
+    <div href="/Home/Index" class="bg-section"><img src="~/assets/images/page-titles/10.jpg" alt="Background"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="title text-lg-left">
+                    <div class="title-sub-heading">
+                    </div>
+                    <div class="title-heading">
+                    </div>
+                    <div class="clearfix"><h1 style="color:#fff">Ürün Detay</h1></div>
+                    <ol class="breadcrumb justify-content-lg-start">
+                        <li class="breadcrumb-item"><a href="/Home/Index">Anasayfa</a></li>
+                        <li class="breadcrumb-item"><a href="">Ürün Detay</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <div style="background-color:#ffff" id="content-wrapper">
+
+        @foreach (var item in Model)
+       {
+           
+     
+        <div class="column">
+            <img id=featured src="~/assets/images/ürün1/@item.ImgPath1">
+
+            <div id="slide-wrapper">
+                <img id="slideLeft" class="arrow" src="~/assets/images/ürün1/sag.png">
+
+                <div id="slider">
+                        <img class="thumbnail active" src="~/assets/images/ürün1/@item.ImgPath1">
+                        <img class="thumbnail" src="~/assets/images/ürün1/@item.ImgPath2">
+                        <img class="thumbnail" src="~/assets/images/ürün1/@item.ImgPath3">
+
+                        <img class="thumbnail" src="~/assets/images/ürün1/@item.ImgPath4">
+                        <img class="thumbnail" src="~/assets/images/ürün1/@item.ImgPath5">
+                        <img class="thumbnail" src="~/assets/images/ürün1/@item.ImgPath6">
+                        <img class="thumbnail" src="~/assets/images/ürün1/@item.ImgPath7">
+                </div>
+
+                    <img id="slideRight" class="arrow" src="~/assets/images/ürün1/sol.png">
+            </div>
+        </div>
+        
+        <div class="column">
+
+                <div style=" " class=" mb-3">
+                    <span class="text-uppercase text-muted brand"></span>
+                    <h5 style="font-size:14px; margin-bottom: 0rem!important; padding: 0.5rem!important; margin:0px; color:#ffff; background-color:#07CBE1" class="text-uppercase p-3 mb-2 bg-info text-white ">@item.ProductName</h5>
+
+                </div>
+
+                <table style="margin-top: -1rem; border:2px solid #17a2b8;" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Size</th>
+                            <th scope="col">Height</th>
+                            <th scope="col">PCS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@item.Metarial</td>
+                            <td>@item.SeatAngleEng</td>
+                            <td> @item.Dimensions</td>
+                        </tr>
+                        <tr>
+                            <td>@item.BoxSize1</td>
+                            <td>@item.BoxSize4</td>
+                            <td>@item.Height2</td>
+
+                        </tr>
+                        <tr>
+                            <td>@item.SeatAngle</td>
+                            <td>@item.TotalWeightEng</td>
+                            <td>@item.DimensionsEng</td>
+
+                     
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <div s~/wwwroot/e="" class=" mb-3">
+                    <span class="text-uppercase text-muted brand"></span>
+                <h5 style=" font-size:14px; margin-bottom: 0rem!important; padding: 0.5rem!important; margin:0px; color:#ffff; background-color:#07CBE1" class="text-uppercase p-3 mb-2 bg-info text-white ">@item.ProductNameEng</h5>
+
+                </div>
+
+                <table style="margin-top: -1rem; border:2px solid #17a2b8;  " class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Size</th>
+                            <th scope="col">Height</th>
+                            <th scope="col">PCS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@item.BoxSizeEng</td>
+                            <td> @item.ThumbDesc2</td>
+                            <td>@item.ThumbDescEng</td>
+
+                        </tr>
+                        <tr>
+                            <td>@item.BoxSize3</td>
+                            <td>@item.Height</td>
+                            <td>@item.Height3</td>
+
+                        </tr>
+                        <tr>
+                            <td>@item.BoxSize2</td>
+                            <td>@item.Height1</td>
+                            <td>@item.Height4</td>
+
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="" class=" mb-3">
+                    <span class="text-uppercase text-muted brand"></span>
+                <h5 style=" font-size:14px; margin-bottom: 0rem!important;  padding: 0.5rem!important; margin:0px; color:#ffff; background-color:#07CBE1" class="text-uppercase p-3 mb-2 bg-info text-white ">@item.ProductDescription</h5>
+
+                </div>
+
+                <table style="margin-top: -1rem; border:2px solid #17a2b8;" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Size</th>
+                            <th scope="col">Height</th>
+                            <th scope="col">PCS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@item.BoxSizeEng</td>
+                            <td> @item.ThumbDesc2</td>
+                            <td>@item.ThumbDescEng</td>
+                        </tr>
+                        <tr>
+                            <td>@item.ThumbDesc</td>
+                            <td> @item.ThumbDesc3</td>
+                            <td>@item.ThumbDesc4</td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style=" " class=" mb-3">
+                    <span class="text-uppercase text-muted brand"></span>
+                    @*                                <h5 style=" margin-bottom: 0rem!important; padding: 0rem!important; margin:0px; color:#ffff; background-color:#07CBE1" class="text-uppercase p-3 mb-2 bg-info text-white ">@Model.Detail4</h5>
+                *@
+                </div>
+                <div style="" class=" mb-3">
+                    <span class="text-uppercase text-muted brand"></span>
+                <h5 style="font-size:14px; margin-bottom: 0rem!important;  padding: 0.5rem!important; margin:0px; color:#ffff; background-color:#07CBE1" class="text-uppercase p-3 mb-2 bg-info text-white ">@item.ProductDescriptionEng</h5>
+
+                </div>
+
+                <table style=" margin-top: -1rem; border:2px solid #17a2b8;" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Size</th>
+                            <th scope="col">Height</th>
+                            <th scope="col">PCS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@item.ThumbDesc7</td>
+                            <td>@item.ThumbDesc8</td>
+                            <td>@item.ThumbDesc9</td>
+
+
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style=" " class="sizes mt-5">
+                    <h6 class="text-uppercase ">Sipariş</h6> <span class="">  +90 530 033 14 18</span>  <p class=" ">  info@quaflux.com.tr</p>
+                    <div class="cart mt-4 align-items-center"> <button style="background-color:#073654;" class="btn  text-uppercase mr-2 px-4"><a style="color: #fff;" href="https://wa.me/+905300331418"> Sipariş</button> </div>
+
+                </div>
+            </div> }
+
+
+
+
+
+            
+        </div>
+@foreach (var item in Model)
+{
+ 
+
+<section class="medium-padding100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-5 col-sm-12 col-xs-12">
+                <div class="crumina-module crumina-heading">
+                    <h5 class="heading-title">Açıklama</h5>
+                    <div class="heading-text">
+                        <p>&nbsp;</p>
+                        <p class="product-title second-column"><strong>Avantajları</strong></p>
+                        <p class="product-title">Quaflux firmamızın %100 kendi üretimi olan Drenaj Sistemleri Ürünleri , Yer Sifonları Ürünleri , Duş Kanaları ve Aksesuarlarıyla müşterilerimizin yanındayız...</p>
+                        <p class="product-title second-column"><strong>Uygulama Alanları</strong></p>
+                        <p class="product-title">@item.ImgPath9</p>
+                       
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md- col-md-offset-2 col-sm-12 col-xs-12">
+                <div class="crumina-module crumina-heading">
+                    <h5 class="heading-title">Teknik Çizim</h5>
+
+                    <div class="crumina-module crumina-screenshots">
+                        <div class="col-item">
+                            <div>
+                                    <img style="padding-top: 55px;
+    padding-left: -144px;
+    height: 250px;
+    width: 1197px;" class="" src="~/assets/images/ürün1/@item.ImgPath8">
+                                   
+                            </div>
+                             
+                        </div>
+                   
+
+
+
+                            
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+}
+     
+       
+
+
+
+    <script type="text/javascript">
+        let thumbnails = document.getElementsByClassName('thumbnail')
+
+        let activeImages = document.getElementsByClassName('active')
+
+        for (var i = 0; i < thumbnails.length; i++) {
+
+            thumbnails[i].addEventListener('mouseover', function () {
+                console.log(activeImages)
+
+                if (activeImages.length > 0) {
+                    activeImages[0].classList.remove('active')
+                }
+
+
+                this.classList.add('active')
+                document.getElementById('featured').src = this.src
+            })
+        }
+
+
+        let buttonRight = document.getElementById('slideRight');
+        let buttonLeft = document.getElementById('slideLeft');
+
+        buttonLeft.addEventListener('click', function () {
+            document.getElementById('slider').scrollLeft -= 180
+        })
+
+        buttonRight.addEventListener('click', function () {
+            document.getElementById('slider').scrollLeft += 180
+        })
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section  class="bg-product-grey  medium-padding80 col-md-12 ">
+   
+    <div  id="selman" class="container">
+        <div style="     height: 274px;
+     max-width: 100%;    background-image:url(/assets/images/ürün1/bas.jpg)" class="row">
+           
+            <div class="col-md-3 col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                <div class="crumina-module crumina-info-box info-box--classic" data-mh="box--classic" style="height: 110.375px;">
+                    <div class="info-box-image">
+                       @* <img class="" src="~/assets/" alt="Ürün Hammedesi">*@
+                    </div>
+                    <div class="info-box-content">
+                        <h6 class="text-white info-box-title c-black">PP</h6>
+                        <p class="info-box-text c-black">Ürün Hammedesi</p>
+                     
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-3 col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                <div class="crumina-module crumina-info-box info-box--classic" data-mh="box--classic" style="height: 110.375px;">
+                    <div class="info-box-image">
+                       @* <img class="" src="~/assets/" alt="Ürün Ağırlığı">*@
+                    </div>
+                    <div class="info-box-content">
+                        <h6 class="info-box-title text-white c-black">2500 gr</h6>
+                        <p class="info-box-text c-black">Ürün Ağırlığı</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                <div class="crumina-module crumina-info-box info-box--classic" data-mh="box--classic" style="height: 110.375px;">
+                    <div class="info-box-image">
+                    @*  <img class="" src="~/assets/" alt="Renk Seçenek">*@
+                    </div>
+                    <div class="info-box-content">
+                        <h6 class="info-box-title c-black text-white">Gri Gray- Siyah - Black</h6>
+                        <p class="info-box-text c-black">Renk Seçenek</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                <div class="crumina-module crumina-info-box info-box--classic" data-mh="box--classic" style="height: 110.375px;">
+                    <div class="info-box-image">
+                       @* <img class="" src="~/assets/" alt="Yük Kapasitesi">*@
+                    </div>
+                    <div class="info-box-content">
+                        <h6 class="info-box-title c-black text-white">11.4 kN</h6>
+                        <p class="info-box-text c-black">Yük Kapasitesi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                <div class="crumina-module crumina-info-box info-box--classic" data-mh="box--classic" style="height: 86.9844px;">
+                    <div class="info-box-image">
+                     @* <img class="" src="~/assets/" alt="Koli Ölçüsü">*@
+                    </div>
+                    <div class="info-box-content">
+                        <h6 class="info-box-title text-white c-black">426x1045x310 mm</h6>
+                        <p class="info-box-text c-black"> Koli Ölçüsü</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                <div class="crumina-module crumina-info-box info-box--classic" data-mh="box--classic" style="height: 86.9844px;">
+                    <div class="info-box-image">
+                        @*<img class="" src="~/assets/" alt="Koli Ölçüsü">*@
+                    </div>
+                    <div class="info-box-content">""""""""""""""
+                        <h6 class="info-box-title c-black text-white">14</h6>
+                        <p class="info-box-text c-black"> Koli İç Adeti</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-md-3 col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                <div class="crumina-module crumina-info-box info-box--classic" data-mh="box--classic" style="height: 86.9844px;">
+                    <div class="info-box-image">
+                       @*<img class="" src="~/assets" alt="Koli Ağırlık">*@
+                    </div>
+
+                    <div class="info-box-content">
+                        <h6 class="info-box-title text-white c-black">36 kg</h6>
+                        <p class="info-box-text c-black"> Koli Ağırlık</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+@foreach (var item in Model)
+{
+    
+
+<section class="medium-padding100 container-full-width">
+    <div style="text-align: center;">
+
+       @* <p style="text-align: center;"><img src="" alt="" width="466" height="264">&nbsp;<img src="" alt="" width="438" height="265"></p>*@
+        
+            <p><img src="~/assets/images/ürün1/@item.ImgPath10" width="992" height="208"></p>
+        
+    </div>
+    </section>
+}
+
+
+<style>
+
+
+        body{
+        padding-top: 100px;
+    }
+
+    #content-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .column{
+        width: 600px;
+        padding: 10px;
+
+    }
+
+    #featured{
+        max-width: 500px;
+        max-height: 600px;
+        object-fit: cover;
+        cursor: pointer;
+        border: 2px solid #fff;
+
+    }
+
+    .thumbnail{
+        object-fit: cover;
+        max-width: 180px;
+        max-height: 100px;
+        cursor: pointer;
+        opacity: 0.5;
+        margin: 5px;
+        border: 2px solid #fff;
+        
+
+    }
+
+    .thumbnail:hover{
+        opacity:1;
+    }
+
+    .active{
+        opacity: 1;
+    }
+
+    #slide-wrapper{
+        max-width: 500px;
+        display: flex;
+        min-height: 100px;
+        align-items: center;
+    }
+
+    #slider{
+        width: 440px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+    }
+
+    #slider::-webkit-scrollbar {
+            width: 8px;
+
+    }
+
+    #slider::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgb(255,255,255);
+
+    }
+
+    #slider::-webkit-scrollbar-thumb {
+            background-color: #ffff;
+      outline: 1px solid slategrey;
+       border-radius: 100px;
+
+    }
+
+    #slider::-webkit-scrollbar-thumb:hover{
+        background-color: #ffff;
+    }
+
+    .arrow{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .arrow:hover{
+        opacity: .5;
+        width: 35px;
+        height: 35px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+      
+    
+    .bg-product-grey {
+        background-color: #ffff;
+    }
+
+    .medium-padding80 {
+        padding: 80px 0;
+    }
+
+    div {
+        display: block;
+    }
+
+    .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, #selman:before, #selman:after, #selman-fluid:before, #selman-fluid:after, .row:before, .row:after {
+        display: table;
+        content: " ";
+        width: 100%;
+    }
+
+    *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, #selman:before, #selman:after, #selman-fluid:before, #selman-fluid:after, .row:before, .row:after {
+        display: table;
+        content: " ";
+        width: 100%;
+    }
+
+    *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, #selman:before, #selman:after, #selman-fluid:before, #selman-fluid:after, .row:before, .row:after {
+        display: table;
+        content: " ";
+        width: 100%;
+    }
+
+    .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, #selman:before, #selman:after, #selman-fluid:before, #selman-fluid:after, .row:before, .row:after {
+        display: table;
+        content: " ";
+        width: 100%;
+    }
+
+    *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .info-box--classic .info-box-image {
+        float: left;
+        margin: 10px 10px 0 0;
+    }
+
+    .crumina-info-box .info-box-image {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        transition: all .3s ease;
+    }
+
+    .info-box--classic .utouch-icon {
+        height: 60px;
+        width: 60px;
+    }
+
+    img {
+        border-style: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+
+</style>
+
+   
+<script>
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+    }
+</script>

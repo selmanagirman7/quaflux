@@ -1,0 +1,192 @@
+﻿@using Entity
+@model List<About>
+
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_EnLayout.cshtml";
+}
+
+<section class="page-title page-title-4 bg-overlay bg-overlay-dark bg-parallax" id="page-title">
+    <div href="/EnHome/Index" class="bg-section"><img src="~/assets/images/page-titles/10.jpg" alt="Background"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="title text-lg-left">
+                    <div class="title-sub-heading">
+                    </div>
+                    <div class="title-heading">
+                    </div>
+                    <div class="clearfix"><h1 style="color:#fff"> About</h1></div>
+                    <ol class="breadcrumb justify-content-lg-start">
+                        <li class="breadcrumb-item"><a href="/EnHome/Index">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/EnAbout/Index">About</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<header class="header header-1 header-transparent" id="navbar-spy">
+
+    <nav class="navbar navbar-expand-lg navbar-bordered navbar-sticky navbar-fixed" id="primary-menu">
+        <div class="container">
+            <a class="navbar-brand" href="/Home/Index"><img class="logo logo-light" src="~/assets/images/logo/logo-light.png" alt="Equita Logo"><img class="logo logo-dark" src="~/assets/images/logo/logo-dark.png" alt="Equita Logo"></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="/EnHome/Index"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="/Product/Demo"><span>Product</span></a></li>
+                    <li class="has-dropdown nav-item ">
+                        <a href="/Galery/Index" class=" nav__item-link">
+                            Our documents
+
+                        </a>
+
+                    </li>
+                    <li class="has-dropdown nav-item ">
+                        <a href="/About/Index" class=" nav__item-link">
+                            About
+
+                        </a>
+
+                    </li>
+                    <li class="has-dropdown nav-item ">
+                        <a href="/OurService/Index" class=" nav__item-link">
+                            Katalog
+
+                        </a>
+
+                    </li>
+                    <li class="has-dropdown nav-item ">
+                        <a href="/Contact/Index" class=" nav__item-link">
+                            Contact
+
+                        </a>
+
+                    </li>
+                    <li hidden="" style="display: none !important; ">
+
+
+                    </li>
+
+                </ul>
+                <div class="module-container">
+
+                    <div class="module module-search float-left">
+                        <div class="module-icon search-icon"><i class="icon-search"></i><span class="title">search</span></div>
+                        <div class="module-content module-fullscreen module-search-box">
+                            <div class="pos-vertical-center">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+                                            <form class="form-search">
+                                                <input class="form-control" type="text" placeholder="type words then enter">
+                                                <button></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><a class="module-cancel" href="javascript:void(0)"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="module-contact"><a class="btn btn--primary" href="/Contact/Index">İletişim</a></div>
+                    <div class="module module-language">
+                        <div class="selected"><span>en </span><i class="fas fa-chevron-down"></i></div>
+                        <div class="lang-list">
+                            <ul>
+                                <li> <a href="/EnHome/EnIndex">English</a></li>
+                                <li> <a href="/Home/Index">Turkey</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="page-title page-title-4 bg-overlay bg-overlay-dark bg-parallax bg-section" id="page-title" style="background-image: url(&quot;/assets/images/page-titles/10.jpg&quot;);">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="title text-lg-left">
+                    <div class="title-sub-heading">
+                        <p></p>
+                    </div>
+                    <div class="title-heading">
+                        <h1>Kurumsal</h1>
+                    </div>
+                    <div class="clearfix"></div>
+                    <ol class="breadcrumb justify-content-lg-start">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+
+                        <li class="breadcrumb-item active" aria-current="page">About</li>
+                    </ol>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about pt-70" id="about-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5">
+                <div class="about-img about-img-left">
+                    <div class="about-img-warp bg-overlay bg-section" style="background-image: url();">
+                        <img src="~/assets/images/kurumm.jpg" />
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-7">
+                <div class="heading heading-3">
+                    <p class="heading-subtitle">Welcome to Quaflux Drainage Systems.</p>
+                    <h2 class="heading-title">30 Years of Experience in Production, Enjoying Your Part</h2>
+                </div>
+                <div class="about-block">
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <div class="block-left">
+                                <p>Established in 1996 as Çetinler Pazarlama, our company started its activities in the hardware sector with its productions. Upon realizing the need for drainage systems in 2005, this area also started production..</p>
+                                <p>Our company, which determined its brand name as Quaflux in 2022, continues to maintain its place in the world market without slowing down..</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <div class="block-right">
+                                <div class="detail">
+                                    <h6>Quality </h6>
+                                    <p>Always further with the understanding of 100% Domestic Production.</p>
+                                </div>
+                                <div class="detail">
+                                    <h6>Quality and Comfort</h6>
+                                    <p>We combine quality and comfort with our products specially designed for you.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="signature-block">
+                    <div class="signature-body">
+                        <h6>Muharrem Çetin</h6>
+                        <p>Kurucu</p>
+                    </div><img src="/assets/images/signature/imza.png" alt="signature">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+

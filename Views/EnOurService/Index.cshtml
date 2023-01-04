@@ -1,0 +1,91 @@
+﻿@using Entity
+@model List<OurService>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="page-title page-title-4 bg-overlay bg-overlay-dark bg-parallax" id="page-title">
+    <div class="bg-section"><img src="~/assets/images/page-titles/10.jpg" alt="Background"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="title text-lg-left">
+                    <div class="title-sub-heading">
+                    </div>
+                    <div class="title-heading">
+                    </div>
+                    <div class="clearfix"><h1 style="color:#fff">Katalog</h1></div>
+                    <ol class="breadcrumb justify-content-lg-start">
+                        <li class="breadcrumb-item"><a href="/EnHome/Index">Home</a></li>
+                        <li class="breadcrumb-item"><a href="">Katalog</a></li>
+                        <li class="breadcrumb-item active" aria-current="Katalog"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<header class="header header-1 header-transparent" id="navbar-spy">
+    <nav class="navbar navbar-expand-lg navbar-bordered navbar-sticky navbar-fixed" id="primary-menu">
+        <div class="container">
+            <a class="navbar-brand" href="/Home/Index"><img class="logo logo-light" src="/assets/images/logo/logo-light.png" alt="Equita Logo"><img class="logo logo-dark" src="/assets/images/logo/logo-dark.png" alt="Equita Logo"></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="/EnHome/Index"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="/Product/Index"><span>Product</span></a></li>
+                    <li class="has-dropdown nav-item ">
+                        <a href="/Galery/Index" class=" nav__item-link">
+                            Our documents
+
+                        </a>
+
+                    </li>
+                    <li class="has-dropdown nav-item ">
+                        <a href="/About/Index" class=" nav__item-link">
+                            About
+
+                        </a>
+
+                    </li>
+                    <li class="has-dropdown nav-item ">
+                        <a href="/OurService/Index" class=" nav__item-link">
+                            Katalog
+
+                        </a>
+
+                    </li>
+                    <li class="has-dropdown nav-item ">
+                        <a href="/Contact/Index" class=" nav__item-link">
+                            Contact
+
+                        </a>
+
+                    </li>
+                    <li hidden="" style="display: none !important; ">
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="blog">
+    <div class="container">
+        <div class="row pt-blog-col-3">
+            <div class="col-lg-4 col-md-6">
+                <div class="pt-blog-post mb-4">
+                    <div class="pt-post-media"><a href="~/assets/images/furkangrupkatalog.pdf"><img alt="" src="~/assets/images/katkapak.jpg" style="width: 354px; height: 501px;"> </a></div>
+                    <div class="pt-blog-contain">
+                        <h5 class="pt-blog-title">&nbsp;</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

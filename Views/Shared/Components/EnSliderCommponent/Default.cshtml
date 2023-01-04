@@ -1,0 +1,48 @@
+﻿@using Entity
+@model IEnumerable<Slider>
+
+<section class="slider slider-1" id="slider-1">
+    <div class="container-fluid pr-0 pl-0">
+        <div class="carousel owl-carousel custom-carousel carousel-navs carousel-dots owl-loaded owl-drag" data-slide="1" data-slide-rs="1" data-autoplay="false" data-nav="true" data-dots="true" data-space="0" data-loop="true" data-speed="800" data-slider-id="#custom-carousel">
+
+
+
+
+            <div class="owl-stage-outer">
+                <div class="owl-stage" style="transform: translate3d(-8457px, 0px, 0px); transition: all 0s ease 0s; width: 16916px;">
+                    @foreach (var item in Model)
+                    {
+
+
+                        <div class="owl-item" style="width: 2114.44px; height:900px;">
+                            <div class="slide d-flex align-items-center bg-overlay bg-overlay-dark">
+
+                                <div class="bg-vid">
+
+                                    @if (item.ImgPath.EndsWith("mp4"))
+                                    {
+                                        <video autoplay="autoplay" playsinline="" muted="" loop="" id="myVideo-1" class="w-100 h-100">
+                                            <source src="~/assets/images/video/@item.ImgPath" type="video/mp4">
+                                            Your browser does not support HTML5 video.
+                                        </video>
+                                    }
+                                    else
+                                    {
+                                        <img src="~/assets/images/video/@item.ImgPath">
+
+                                    }
+
+
+
+
+                                </div>
+
+                            </div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div><div class="owl-thumbs"></div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+
+
+</section>

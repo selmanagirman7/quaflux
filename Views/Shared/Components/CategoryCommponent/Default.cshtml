@@ -1,0 +1,9 @@
+﻿@using Entity
+@model List<Category>
+
+    @foreach (var item in Model)
+   {
+    <li style=" font-weight:600;    margin:15px; margin-left:150px;"><a style="color:dimgray;" href="/Product/GetCategories/@item.CategoryId">@item.CategoryName</a></li>
+
+}
+
